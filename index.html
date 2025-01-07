@@ -44,12 +44,31 @@
   <form id="generator-form">
     <label for="plan">Upload Plan CSV:</label>
     <input type="file" id="plan" accept=".csv" required><br><br>
-    <label for="schedule">Upload Schedule CSV:</label>
-    <input type="file" id="schedule" accept=".csv" required><br><br>
     <label for="cover-url">Enter Cover Image URL:</label>
     <input type="url" id="cover-url" placeholder="https://example.com/image.jpg" required><br><br>
     <label for="target-date">Select Target Date:</label>
     <input type="date" id="target-date" required><br><br>
+    <label for="basis">Select Basis for D-Day:</label>
+    <select id="basis" required>
+      <option value="today">Today</option>
+      <option value="custom">Custom Date</option>
+    </select><br><br>
+    <label for="custom-date" id="custom-date-label" style="display:none;">Select Custom Date:</label>
+    <input type="date" id="custom-date" style="display:none;"><br><br>
+    <label for="description-monday">Enter Description for Monday:</label>
+    <input type="text" id="description-monday" placeholder="Description for Monday" required><br><br>
+    <label for="description-tuesday">Enter Description for Tuesday:</label>
+    <input type="text" id="description-tuesday" placeholder="Description for Tuesday" required><br><br>
+    <label for="description-wednesday">Enter Description for Wednesday:</label>
+    <input type="text" id="description-wednesday" placeholder="Description for Wednesday" required><br><br>
+    <label for="description-thursday">Enter Description for Thursday:</label>
+    <input type="text" id="description-thursday" placeholder="Description for Thursday" required><br><br>
+    <label for="description-friday">Enter Description for Friday:</label>
+    <input type="text" id="description-friday" placeholder="Description for Friday" required><br><br>
+    <label for="description-saturday">Enter Description for Saturday:</label>
+    <input type="text" id="description-saturday" placeholder="Description for Saturday" required><br><br>
+    <label for="description-sunday">Enter Description for Sunday:</label>
+    <input type="text" id="description-sunday" placeholder="Description for Sunday" required><br><br>
     <button type="button" id="generate">Generate HTML</button>
   </form>
   <script src="script.js"></script>
